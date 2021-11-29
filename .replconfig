@@ -5,6 +5,7 @@
 #demo@10     # demo.username.repl.co       @ every 10 minutes
 
 YodaCode # This is one that I have set up
+google # Another one I have set up for personal use
 
 # ReplAwake will also check your environment variables. Set the X_AWAKE_REPLS to a comma-seperated list of repls. For example:
 # X_AWAKE_REPLS=demo,demo/path,demo@10
