@@ -1,0 +1,19 @@
+{
+  "name": "UptimeRepl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "frontly": "^1.0.1",
+    "node-fetch": "^2.6.1",
+    "robindb": "^2.0.10",
+    "stump.js": "^1.1.0"
+  }
+}

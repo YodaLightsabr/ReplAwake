@@ -1,0 +1,183 @@
+body {
+  background-color: #131a26;
+  font-family: "Roboto",Arial,sans-serif;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+div.card {
+  padding: 60px;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  background: #212937;
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+div.header {
+  padding: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 6px;
+  color: #fff;
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+p.subtitle {
+  font-size: 14px;
+  opacity: 0.5;
+  padding: 0px;
+  padding-top: 10px;
+  margin: 0px;
+}
+div.header > h2 {
+  padding: 0px;
+  margin: 0px;
+}
+div.dot:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: currentColor;
+  animation: pulseBig 2s infinite;
+  opacity: 1;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+div.dot {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #3bd671;
+  background: #3bd671;
+  position: relative;
+  -ms-transform: none;
+  transform: none;
+  margin-right: 30px;
+}
+div.dot.offline {
+  background: #df484a;
+  color: #df484a;
+}
+div.innerCard {
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+div.card > div.innerCard > h1 {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: inherit;
+  text-transform: none;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  vertical-align: middle;
+  line-height: 1.096;
+}
+@keyframes pulseBig{0%{opacity:0.5}70%{opacity:0;transform:scale(1.6)}100%{opacity:0}}
+div.name {
+  float: right;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+div.name > h1 {
+  display: inline-block;
+}
+@media only screen and (max-width: 600px) {
+  div.name {
+    float: inherit;
+    position: relative;
+    top: inherit;
+    right: inherit;
+    display: block;
+  }
+}
+.online {
+  color: #3bd671!important;
+}
+.offline {
+  color: #df484a!important;
+}
+button.discord {
+  
+    color: #fff;
+    background-color: #7289da!important;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    height: 44px;
+    min-width: 130px;
+    min-height: 44px;
+    transition: background-color .17s ease,color .17s ease;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+    cursor: pointer;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    appearance: auto;
+}
+button.discord > div {
+  
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    line-height: 24px;
+}
+@font-face {
+  font-family: 'Whitney';
+  src: url('https://static.yodacode.repl.co/fonts/Whitney_Medium.woff') format('woff'),
+       url('https://static.yodacode.repl.co/fonts/Whitney_Medium.ttf')  format('truetype');
+}
+
+button.discord:hover {
+  
+    background-color: #677bc4!important;
+}

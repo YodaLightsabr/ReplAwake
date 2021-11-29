@@ -1,0 +1,10 @@
+# ReplAwake Configuration File
+
+#demo        # demo.username.repl.co       @ every minute
+#demo/path   # demo.username.repl.co/path  @ every minute
+#demo@10     # demo.username.repl.co       @ every 10 minutes
+
+YodaCode # This is one that I have set up
+
+# ReplAwake will also check your environment variables. Set the X_AWAKE_REPLS to a comma-seperated list of repls. For example:
+# X_AWAKE_REPLS=demo,demo/path,demo@10
